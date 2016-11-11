@@ -1,0 +1,28 @@
+<%- layout('layouts/default') -%>
+<% if (data.name != undefined){ %>
+  <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+           <h5><%= data.name %></h5>
+           <h6>只需輸入辨識碼</h6>
+            <div class="card-content">
+                 <form method="post" accept-charset="utf-8">
+                    <% for(var i=0;i<data.total;i++){ %>
+                        <label><%= i + 1 %></label>
+                        <input name="source_url[<%= i %>]" id="img_url" value="<%= data.source_url[i] %>" placeholder="" class="form-control" type="text">
+                    <% } %>
+                    <div class="card-action">
+                        <input type="submit" class="waves-effect waves-light btn" value="送出">
+                        <label><%= message %></label>
+                    </div>
+                </form>   
+            </div>
+          </div>
+        </div>
+      </div>
+<% }else{ %>
+    <h4>無此資料</h4>
+<% } %>
+
+
+       

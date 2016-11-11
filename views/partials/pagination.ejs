@@ -1,0 +1,17 @@
+<div class="container">
+<ul class="pagination">
+    <% for(var i=1; i<=data.total;i++){ %>
+    <% if(no == i){%>
+    <li class="waves-effect active"
+        id="<%= data.name %>_<%= i %>">
+        <a href="<%= i%>"><%= i %></a>
+    </li>
+    <% }else{ %>
+    <li class="waves-effect"
+        id="<%= data.name %>_<%= i %>">
+        <a href="<%= i%>"><%= i %></a>
+    </li>
+    <% } %>
+    <% } %>
+</ul>
+</div>

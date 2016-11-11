@@ -1,0 +1,23 @@
+<%- layout('layouts/default') -%>
+
+  <div class="row">
+        <div class="col s12 m4">
+          <label><%= message %></label>
+          <div class="card">
+            <div class="card-content">
+             <form method="post" accept-charset="utf-8">
+                    <h6 class='title'>名字：</h6>
+                    <input name="name" id="name" value="" placeholder="" class="form-control" type="text">
+                    <h6  class='title'>圖片超連結：</h6>
+                    <input name="img_url" id="img_url" value="" placeholder="" class="form-control" type="text">
+                    <h6  class='title'>集數：</h6>
+                    <input name="total" id="img_url" value="" placeholder="" class="form-control" type="text">
+                    <div class="card-action">
+                        <input type="submit" class="waves-effect waves-light btn" value="送出">
+                    </div>
+                </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>

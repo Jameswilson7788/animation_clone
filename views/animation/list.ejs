@@ -1,0 +1,17 @@
+<%- layout('layouts/default') -%>
+ <div class="row">
+<% datas.forEach(function(data){ %>
+    
+        <div class="col s12 m4 l2">
+          <div class="card"  >
+            <div class="card-image" >
+              <img style="height:15em;" src="<%= data.img_url%>">
+            </div>
+            <div class="card-action">
+              <a href="/animation/play/<%= data.name %>/1"><%=data.name%></a>
+            </div>
+          </div>
+        </div>
+     
+<% }) %>
+</div>
