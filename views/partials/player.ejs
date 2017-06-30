@@ -3,7 +3,7 @@
     <h5>您現在正在收看：<%= data.name %></h5>
 <div class="video-container">
     <% if(data.source_url[no] != 'undefined'){;%>
-    <iframe width="853" height="480" src="https://drive.google.com/file/d/<%= data.source_url[no] %>/preview" frameborder="0" allowfullscreen></iframe>
+    <iframe width="853" height="480" src="https://drive.google.com/file/d/<%= data.source_url[no]  %>/preview" frameborder="0" allowfullscreen></iframe>
     <% }else{ %>
         <h3>無此影片</h3>
     <% } %>

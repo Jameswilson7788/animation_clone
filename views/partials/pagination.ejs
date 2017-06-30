@@ -1,7 +1,7 @@
 <div class="container">
 <ul class="pagination">
     <% for(var i=1; i<=data.total;i++){ %>
-    <% if(no == i){%>
+    <% if(no == i - 1){%>
     <li class="waves-effect active"
         id="<%= data.name %>_<%= i %>">
         <a href="<%= i%>"><%= i %></a>
